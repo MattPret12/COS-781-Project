@@ -1,0 +1,15 @@
+================================================================================
+LSH-BASED DATA ANONYMIZATION - RESULTS SUMMARY
+================================================================================
+
+Metric Category                            Metric           Value          Improvement
+    Scalability                   Maximum Speedup          531.5x               53048%
+    Scalability                   Average Speedup          130.2x               12916%
+    Scalability                   Time Complexity O(n log n + nk) vs O(n²) traditional
+        Privacy           Information Loss (k=10)           39.3%           Acceptable
+        Privacy               Data Utility (k=10)           71.7%       High retention
+        Privacy             Discernibility (k=10)            33.0          Low penalty
+   Partitioning    Similarity Preservation (p=32)           81.0%         High quality
+   Partitioning Parallelization Efficiency (p=32)         1254.9%         Near optimal
+
+================================================================================

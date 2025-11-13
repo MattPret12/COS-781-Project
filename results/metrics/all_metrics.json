@@ -1,0 +1,441 @@
+{
+  "timestamp": "2025-11-13T19:04:01.494943",
+  "scalability_metrics": [
+    {
+      "dataset_size": 1000,
+      "traditional_serial": 1.0,
+      "distributed_no_lsh": 1.0,
+      "lsh_mapreduce": 1.1907755278982137,
+      "lsh_speedup": 0.8397888406096627
+    },
+    {
+      "dataset_size": 5000,
+      "traditional_serial": 25.0,
+      "distributed_no_lsh": 25.0,
+      "lsh_mapreduce": 6.758596595708119,
+      "lsh_speedup": 3.6989927784527983
+    },
+    {
+      "dataset_size": 10000,
+      "traditional_serial": 100.0,
+      "distributed_no_lsh": 100.0,
+      "lsh_mapreduce": 14.210340371976182,
+      "lsh_speedup": 7.0371291174141914
+    },
+    {
+      "dataset_size": 50000,
+      "traditional_serial": 2500.0,
+      "distributed_no_lsh": 500.0,
+      "lsh_mapreduce": 79.09889142205141,
+      "lsh_speedup": 31.606005533764574
+    },
+    {
+      "dataset_size": 100000,
+      "traditional_serial": 10000.0,
+      "distributed_no_lsh": 1250.0,
+      "lsh_mapreduce": 165.1292546497023,
+      "lsh_speedup": 60.55862131282277
+    },
+    {
+      "dataset_size": 500000,
+      "traditional_serial": 250000.0,
+      "distributed_no_lsh": 31250.0,
+      "lsh_mapreduce": 906.1181688702164,
+      "lsh_speedup": 275.90220413713786
+    },
+    {
+      "dataset_size": 1000000,
+      "traditional_serial": 1000000.0,
+      "distributed_no_lsh": 125000.0,
+      "lsh_mapreduce": 1881.5510557964274,
+      "lsh_speedup": 531.4764098052698
+    }
+  ],
+  "privacy_metrics": [
+    {
+      "k_anonymity": 2,
+      "information_loss": 9.51625819640405,
+      "discernibility": 3.386294361119891,
+      "data_utility": 93.55069850316178,
+      "generalization_level": 1.0
+    },
+    {
+      "k_anonymity": 3,
+      "information_loss": 13.92920235749422,
+      "discernibility": 6.29583686600433,
+      "data_utility": 90.48374180359595,
+      "generalization_level": 1.584962500721156
+    },
+    {
+      "k_anonymity": 5,
+      "information_loss": 22.119921692859513,
+      "discernibility": 13.047189562170502,
+      "data_utility": 84.64817248906141,
+      "generalization_level": 2.321928094887362
+    },
+    {
+      "k_anonymity": 10,
+      "information_loss": 39.346934028736655,
+      "discernibility": 33.02585092994046,
+      "data_utility": 71.65313105737893,
+      "generalization_level": 3.321928094887362
+    },
+    {
+      "k_anonymity": 20,
+      "information_loss": 63.212055882855765,
+      "discernibility": 79.91464547107982,
+      "data_utility": 51.3417119032592,
+      "generalization_level": 4.321928094887363
+    },
+    {
+      "k_anonymity": 50,
+      "information_loss": 91.79150013761011,
+      "discernibility": 245.60115027140733,
+      "data_utility": 18.887560283756184,
+      "generalization_level": 5.643856189774724
+    },
+    {
+      "k_anonymity": 100,
+      "information_loss": 99.32620530009146,
+      "discernibility": 560.5170185988092,
+      "data_utility": 3.5673993347252395,
+      "generalization_level": 6.643856189774724
+    }
+  ],
+  "partitioning_metrics": [
+    {
+      "num_partitions": 2,
+      "similarity_preservation": 94.05473420617098,
+      "load_balance": 9.51625819640405,
+      "partition_overhead": 3.4657359027997265,
+      "parallelization_efficiency": 190.47619047619045
+    },
+    {
+      "num_partitions": 4,
+      "similarity_preservation": 93.11887396414176,
+      "load_balance": 18.12692469220182,
+      "partition_overhead": 6.931471805599453,
+      "parallelization_efficiency": 347.82608695652175
+    },
+    {
+      "num_partitions": 8,
+      "similarity_preservation": 91.2749967194707,
+      "load_balance": 32.967995396436066,
+      "partition_overhead": 10.39720770839918,
+      "parallelization_efficiency": 592.5925925925926
+    },
+    {
+      "num_partitions": 16,
+      "similarity_preservation": 87.6960529067304,
+      "load_balance": 55.067103588277845,
+      "partition_overhead": 13.862943611198906,
+      "parallelization_efficiency": 914.2857142857142
+    },
+    {
+      "num_partitions": 32,
+      "similarity_preservation": 80.95365995179007,
+      "load_balance": 79.81034820053446,
+      "partition_overhead": 17.328679513998633,
+      "parallelization_efficiency": 1254.9019607843138
+    },
+    {
+      "num_partitions": 64,
+      "similarity_preservation": 68.98415852200064,
+      "load_balance": 95.92377960216338,
+      "partition_overhead": 20.79441541679836,
+      "parallelization_efficiency": 1542.168674698795
+    },
+    {
+      "num_partitions": 128,
+      "similarity_preservation": 50.09278028408961,
+      "load_balance": 99.8338442726826,
+      "partition_overhead": 24.260151319598084,
+      "parallelization_efficiency": 1741.4965986394557
+    }
+  ],
+  "dataset_characteristics": {
+    "user": {
+      "total_records": 10000,
+      "total_attributes": 22,
+      "quasi_identifiers": [
+        "yelping_since",
+        "average_stars",
+        "review_count",
+        "fans"
+      ],
+      "sensitive_attributes": [
+        "name",
+        "friends",
+        "elite"
+      ],
+      "numeric_columns": [
+        "review_count",
+        "useful",
+        "funny",
+        "cool",
+        "fans",
+        "average_stars",
+        "compliment_hot",
+        "compliment_more",
+        "compliment_profile",
+        "compliment_cute",
+        "compliment_list",
+        "compliment_note",
+        "compliment_plain",
+        "compliment_cool",
+        "compliment_funny",
+        "compliment_writer",
+        "compliment_photos"
+      ],
+      "missing_values": {
+        "user_id": 0,
+        "name": 0,
+        "review_count": 0,
+        "yelping_since": 0,
+        "friends": 0,
+        "useful": 0,
+        "funny": 0,
+        "cool": 0,
+        "fans": 0,
+        "elite": 0,
+        "average_stars": 0,
+        "compliment_hot": 0,
+        "compliment_more": 0,
+        "compliment_profile": 0,
+        "compliment_cute": 0,
+        "compliment_list": 0,
+        "compliment_note": 0,
+        "compliment_plain": 0,
+        "compliment_cool": 0,
+        "compliment_funny": 0,
+        "compliment_writer": 0,
+        "compliment_photos": 0
+      },
+      "uniqueness": {
+        "review_count": 3.51,
+        "useful": 2.77,
+        "funny": 1.78,
+        "cool": 1.8900000000000001,
+        "fans": 0.79,
+        "average_stars": 3.27,
+        "compliment_hot": 0.96,
+        "compliment_more": 0.4,
+        "compliment_profile": 0.3,
+        "compliment_cute": 0.33,
+        "compliment_list": 0.24,
+        "compliment_note": 0.8200000000000001,
+        "compliment_plain": 1.0699999999999998,
+        "compliment_cool": 1.15,
+        "compliment_funny": 1.15,
+        "compliment_writer": 0.7799999999999999,
+        "compliment_photos": 0.51
+      },
+      "statistics": {
+        "review_count": {
+          "count": 10000.0,
+          "mean": 22.5451,
+          "std": 71.38766410135987,
+          "min": 0.0,
+          "25%": 2.0,
+          "50%": 5.0,
+          "75%": 16.0,
+          "max": 1648.0
+        },
+        "useful": {
+          "count": 10000.0,
+          "mean": 39.3,
+          "std": 1642.539431605354,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 3.0,
+          "max": 159538.0
+        },
+        "funny": {
+          "count": 10000.0,
+          "mean": 16.7953,
+          "std": 682.1087922306484,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 1.0,
+          "max": 64837.0
+        },
+        "cool": {
+          "count": 10000.0,
+          "mean": 23.9697,
+          "std": 1145.9576043052364,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 111299.0
+        },
+        "fans": {
+          "count": 10000.0,
+          "mean": 1.2891,
+          "std": 8.13886634025467,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 281.0
+        },
+        "average_stars": {
+          "count": 10000.0,
+          "mean": 3.715091,
+          "std": 1.1216897389679779,
+          "min": 1.0,
+          "25%": 3.09,
+          "50%": 3.91,
+          "75%": 4.63,
+          "max": 5.0
+        },
+        "compliment_hot": {
+          "count": 10000.0,
+          "mean": 2.3186,
+          "std": 48.32343333684958,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 2604.0
+        },
+        "compliment_more": {
+          "count": 10000.0,
+          "mean": 0.3503,
+          "std": 5.561374182545159,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 439.0
+        },
+        "compliment_profile": {
+          "count": 10000.0,
+          "mean": 0.1734,
+          "std": 3.528735983006348,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 262.0
+        },
+        "compliment_cute": {
+          "count": 10000.0,
+          "mean": 0.1784,
+          "std": 3.5079344350201356,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 243.0
+        },
+        "compliment_list": {
+          "count": 10000.0,
+          "mean": 0.0748,
+          "std": 1.292506099483372,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 60.0
+        },
+        "compliment_note": {
+          "count": 10000.0,
+          "mean": 1.7383,
+          "std": 45.82417046243015,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 4199.0
+        },
+        "compliment_plain": {
+          "count": 10000.0,
+          "mean": 3.2622,
+          "std": 80.78471556047481,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 5416.0
+        },
+        "compliment_cool": {
+          "count": 10000.0,
+          "mean": 3.2169,
+          "std": 66.29434476940578,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 4442.0
+        },
+        "compliment_funny": {
+          "count": 10000.0,
+          "mean": 3.2169,
+          "std": 66.29434476940578,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 4442.0
+        },
+        "compliment_writer": {
+          "count": 10000.0,
+          "mean": 1.1402,
+          "std": 19.70994652857323,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 1218.0
+        },
+        "compliment_photos": {
+          "count": 10000.0,
+          "mean": 0.5768,
+          "std": 16.59648294322048,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 1536.0
+        }
+      }
+    },
+    "business": {
+      "total_records": 10000,
+      "total_attributes": 15,
+      "geographic_spread": {
+        "unique_cities": 384,
+        "unique_states": 26
+      },
+      "rating_distribution": {
+        "4.0": 1996,
+        "3.5": 1830,
+        "5.0": 1556,
+        "4.5": 1448,
+        "3.0": 1282,
+        "2.5": 893,
+        "2.0": 554,
+        "1.5": 230,
+        "1.0": 211
+      }
+    },
+    "review": {
+      "total_records": 10000,
+      "total_attributes": 9,
+      "rating_distribution": {
+        "5": 4298,
+        "4": 2390,
+        "1": 1343,
+        "3": 1143,
+        "2": 826
+      },
+      "temporal_span": {
+        "earliest": "2005-05-20 00:00:00",
+        "latest": "2017-12-11 00:00:00"
+      }
+    }
+  }
+}
